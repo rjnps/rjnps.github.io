@@ -23,5 +23,3 @@ The observation space (input to the policy) involves linear and angular velocity
 Actions (output of the policy) comprises the position targets for all the 12 actuators in the robot, scaled by a suitable parameter. The actions are then passed through a PD controller to calculate torques required for all the actuators. These torques are commanded to the actuators through the tensor interface in isaacgym. The policy is a multilayer perceptron network, with three hidden layers, that is trained with proximal policy optimization. Multiple robots were trained in parallel to speed up the training process. The training took around 40 minutes on an RTX 4070ti GPU.
 
 This work was inspired from <https://leggedrobotics.github.io/legged_gym/>.
-
-{% endraw %}
