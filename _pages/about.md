@@ -12,9 +12,9 @@ profile:
     <p>Undergrad</p>
     <p>@ IIT ISM Dhanbad</p>
 
-News: true # includes a list of news items
-Selected_papers: true # includes a list of papers marked as "selected={true}"
-Social: true # includes social icons at the bottom of the page
+news: true # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 ---
 
 Hello! I'm a passionate researcher, obsessed with Artificial Intelligence and Robotics, as I firmly believe that they possess the transformative power to redefine the world around us and enhance our comprehension of it. I aim to build a beautiful and efficient system that is capable of understanding itself, others and its surroundings, ultimately contributing positively to societal harmony and progress.
