@@ -8,74 +8,20 @@ category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Legged robots like quadruped robots and humanoids have supreme mobility when compared to its wheeled counterparts. Controlling a quadruped robot to walk on challenging terrain using conventional controllers results in a lot of edge cases that are impossible to take into account while designing one. Reinforcement learning is a powerful paradigm that allows us to train very complex systems to perform complex actions.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+In this work I have used a custom implementation of proximal policy optimization to train a quadruped robot to traverse a challenging terrain by following the commands given by a high level entity. The robot was designed ergonomically to walk on different kinds of terrain; also keeping in mind the ease of manufacture of each of its parts. The robot was trained on Nvidia’s Isaacgym physics simulation engine with domain randomization (random mass for robot’s base, random values of friction,random external force to the base of the robot, noise to observations) to facilitate the sim to real transfer of policy. The robots were trained to walk on both flat and rugged terrains including stairs, slopes and gap terrains.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/projects/post.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The observation space (input to the policy) involves linear and angular velocity of the base, orientation of the base (euler angles), commands given by the high level entity (randomized periodically for training), the actuator positions and velocities (of all 12 actuators of the robot), height measurement around the base of the robot. A random noise was added to all the observations as part of domain randomization.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Actions (output of the policy) comprises the position targets for all the 12 actuators in the robot, scaled by a suitable parameter. The actions are then passed through a PD controller to calculate torques required for all the actuators. These torques are commanded to the actuators through the tensor interface in isaacgym. The policy is a multilayer perceptron network, with three hidden layers, that is trained with proximal policy optimization. Multiple robots were trained in parallel to speed up the training process. The training took around 40 minutes on an RTX 4070ti GPU.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+This work was inspired from <https://leggedrobotics.github.io/legged_gym/>.
 
 {% endraw %}
