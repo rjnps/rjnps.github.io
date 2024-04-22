@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reinforcement Learning
+title: RL-controller
 description: quadruped robot
 img: assets/img/projects/rl_qped.png
 importance: 1
