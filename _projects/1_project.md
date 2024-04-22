@@ -5,7 +5,7 @@ description: quadruped robot
 img: assets/img/projects/rl_qped.png
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 Legged robots like quadruped robots and humanoids have supreme mobility when compared to its wheeled counterparts. Controlling a quadruped robot to walk on challenging terrain using conventional controllers results in a lot of edge cases that are impossible to take into account while designing one. Reinforcement learning is a powerful paradigm that allows us to train very complex systems to perform complex actions.
