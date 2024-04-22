@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Obsessed with AI and Robotics
+subtitle: OBSESSED WITH AI & ROBOTS
 
 profile:
   align: right
