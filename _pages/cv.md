@@ -2,7 +2,9 @@
 layout: cv
 permalink: /cv/
 title: CV
-nav: false
+nav: true
 nav_order: 5
 cv_pdf: CV_Arjun.pdf
+toc:
+  sidebar: left
 ---
