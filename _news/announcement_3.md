@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Won the CVPR 2024, Embodied AI challenge Challenge
-date: 2023-6-21 16:11:00-0400
+date: 2024-6-21 16:11:00-0400
 inline: false
 related_posts: false
 ---
