@@ -10,7 +10,7 @@ related_posts: false
 
 ---
 
-<img src="assets/cvpr/won.png" alt="CVPR">
+<img title="_cvpr_" src="assets/cvpr/won.png">
 
 The embodied AI Challenge involved designing an embodied AI agent that is capable of navigating unfamiliar environments, recognizing open vocabulary classes and manipulating novel objects.
 
