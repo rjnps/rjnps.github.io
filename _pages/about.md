@@ -2,21 +2,21 @@
 layout: about
 title: about
 permalink: /
-subtitle: OBSESSED WITH AI & ROBOTS
+subtitle: Robotics Researcher
 
 profile:
   align: right
   image: prof.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Undergrad</p>
-    <p>@ IIT ISM Dhanbad</p>
-
+    <p>Masters in Robotics</p>
+    <p>@ CMU</p>
+    <p>apushpal@andrew.cmu.edu</p>
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-Hi, I’m an incoming masters in robotics student at Carnegie Mellon University. Previously, I received my undergraduate degree from IIT (ISM) Dhanbad, India.
+Hi, I’m an incoming Masters in Robotics student at Carnegie Mellon University. Previously, I received my undergraduate degree from IIT (ISM) Dhanbad, India.
 
 I am broadly interested in building general purpose robots that can adapt to new tasks and environments.
 
