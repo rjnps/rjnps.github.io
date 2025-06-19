@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: grab a cup of coffee and dive into my cool collection
 nav: true

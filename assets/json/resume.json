@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Arjun P S",
-    "label": "Undergraduate",
+    "label": "Graduate Student",
     "image": "",
     "email": "psarjun2001@gmail.com",
     "phone": "+91 9746751054",
@@ -21,28 +21,5 @@
         "url": "https://www.linkedin.com/in/arjun-ps-837a38150/"
       }
     ]
-  },
-  "work": [
-    {
-      "name": "ARTIFICIAL INTELLIGENCE AND SPACE ROBOTICS DIVISION, ISRO",
-      "position": "Research Intern",
-      "url": "https://www.isro.gov.in/IISU.html",
-      "startDate": "2022-05-01",
-      "endDate": "2022-08-01",
-      "summary": "Designed a controller for a quadruped robot, for interplanetary missions",
-      "highlights": ["Model Predictive Control, Quadruped Robot"]
-    }
-  ],
-  "education": [
-    {
-      "institution": "IIT ISM Dhanbad, India",
-      "location": "Dhanbad, India",
-      "url": "https://www.iitism.ac.in/",
-      "area": "Electronics and Communication Engineering",
-      "studyType": "Undergraduate",
-      "startDate": "2020-10-01",
-      "endDate": "2024-05-10",
-      "score": "8.56"
-    }
-  ]
+  }
 }
