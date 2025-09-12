@@ -9,16 +9,17 @@ profile:
   image: prof.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Masters in Robotics</p>
-    <p>@ CMU</p>
+    <p>Researcher</p>
+    <p>Robotics and AI</p>
     <p>apushpal@andrew.cmu.edu</p>
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-Hi, I’m an incoming Masters in Robotics student at Carnegie Mellon University. Previously, I received my undergraduate degree from IIT (ISM) Dhanbad, India.
+<!-- Hi, I’m an incoming Masters in Robotics student at Carnegie Mellon University. Previously, I received my undergraduate degree from IIT (ISM) Dhanbad, India. -->
+Hi, I’m a passionate researcher in Robotics and AI. Previously, I have worked with Dr. Andrew Melnik (University of Bremen) and Prof. GC Nandi (IIIT Allahabad) on Embodied AI. I received my undergraduate degree from IIT (ISM) Dhanbad, India.
 
-I am broadly interested in building general purpose robots that can adapt to new tasks and environments.
+I am broadly interested in building general purpose robots that can adapt to new tasks and environments. In particular, I'm interested in addressing the data bottleneck in building foundational models for robots (using all the available data modalities, especially egocentric and exocentric videos), scaling VLA models for long horizon tasks and Humanoid wholebody loco-manipulation. 
 
 
 <!-- Hello! I'm a passionate researcher, obsessed with Artificial Intelligence and Robotics, as I firmly believe that they possess the transformative power to redefine the world around us and enhance our comprehension of it. I aim to build a beautiful and efficient system that is capable of understanding itself, others and its surroundings, ultimately contributing positively to societal harmony and progress.
